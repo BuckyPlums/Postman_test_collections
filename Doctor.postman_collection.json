@@ -1,0 +1,514 @@
+{
+	"info": {
+		"_postman_id": "3295fd2c-4880-4d9b-9622-6e1f6026a92b",
+		"name": "Doctor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17940560"
+	},
+	"item": [
+		{
+			"name": "DoctorPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_no_MFOID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_no_TransactionID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_no_phone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_no_email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_no_last_name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_no_name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_no_BD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_no_gender",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_no_timeZone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_no_approveDatetime",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_wrong_MFOid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9FIA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_wrong_transactionID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66asa0\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_wrong_phone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"+19670956841\",\r\n  \"email\": \"dspirina@click2.money\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_wrong_email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"5CB17F2D-0057-4DBF-A5BF-4CC8AF0E9BEA\",\r\n  \"transactionId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"phone\": \"89670956841\",\r\n  \"email\": \"spirinada@gmail\",\r\n  \"lastName\": \"TestTest\",\r\n  \"name\": \"Test\",\r\n  \"birthday\": \"2022-06-03T14:17:01.660Z\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"2022-06-03T14:17:01.660Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_wrong_lastName",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"true\",\r\n  \"transactionId\": \"true\",\r\n  \"phone\": \"true\",\r\n  \"email\": \"true\",\r\n  \"lastName\": \"true\",\r\n  \"name\": \"true\",\r\n  \"birthday\": \"true\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_body_true",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mfoId\": \"true\",\r\n  \"transactionId\": \"true\",\r\n  \"phone\": \"true\",\r\n  \"email\": \"true\",\r\n  \"lastName\": \"true\",\r\n  \"name\": \"true\",\r\n  \"birthday\": \"true\",\r\n  \"gender\": 0,\r\n  \"timeZone\": 0,\r\n  \"approveDatetime\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoctorPost_without_params",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tele-doc.ru/doctor",
+					"protocol": "https",
+					"host": [
+						"tele-doc",
+						"ru"
+					],
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
