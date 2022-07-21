@@ -1,0 +1,137 @@
+openapi: 3.0.1
+info:
+  title: Telemed.API
+  version: '1.0'
+paths:
+  /Doctor:
+    get:
+      tags:
+        - Doctor
+      parameters:
+        - name: MfoId
+          in: query
+          description: "Идентификатор МФО" 
+          schema:
+            type: string
+        - name: TransactionId
+          in: query
+          description: "Идентификатор транзакции 
+          \nuuid" 
+          schema:
+            type: string
+            format: uuid
+        - name: Phone
+          in: query
+          description: "Номер клиента 
+          \n^(7|8)?([0-9]){10}$"
+          schema:
+            type: string
+        - name: Email
+          in: query
+          description: "E-mail клиента 
+          \n.+@.+&#92;..+"
+          schema:
+            type: string
+        - name: LastName
+          in: query
+          description: "Фамилия клиента" 
+          schema:
+            type: string
+        - name: Name
+          in: query
+          description: "Имя клиента" 
+          schema:
+            type: string
+        - name: Birthday
+          in: query
+          description: "Дата рождения клиента 
+          \nYYYY-MM-DD" 
+          schema:
+            type: string
+            format: date-time
+        - name: Gender
+          in: query
+          description: "Пол клиента 
+          \n0 - мужчина, 1 - женщина"
+          schema:
+            $ref: '#/components/schemas/Gender'
+        - name: TimeZone
+          in: query
+          description: "Часовой пояс клиента 
+          \nint32"
+          schema:
+            type: integer
+            format: int32
+        - name: ApproveDatetime
+          in: query
+          description: "Дата подтверждения сделки 
+          \nYYYY-MM-DD"
+          schema:
+            type: string
+            format: date-time
+      responses:
+        '200':
+          description: Success
+    post:
+      tags:
+        - Doctor
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DoctorRequestDto'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/DoctorRequestDto'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/DoctorRequestDto'
+      responses:
+        '200':
+          description: Success
+components:
+  schemas:
+    DoctorRequestDto:
+      type: object
+      properties:
+        mfoId:
+          type: string
+          nullable: true
+        transactionId:
+          type: string
+          format: uuid
+          nullable: true
+        phone:
+          type: string
+          nullable: true
+        email:
+          type: string
+          nullable: true
+        lastName:
+          type: string
+          nullable: true
+        name:
+          type: string
+          nullable: true
+        birthday:
+          type: string
+          format: date-time
+          nullable: true
+        gender:
+          $ref: '#/components/schemas/Gender'
+        timeZone:
+          type: integer
+          format: int32
+          nullable: true
+        approveDatetime:
+          type: string
+          format: date-time
+          nullable: true
+      additionalProperties: false
+    Gender:
+      enum:
+        - 0
+        - 1
+      type: integer
+      format: int32
+    
